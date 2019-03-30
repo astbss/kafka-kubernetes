@@ -20,6 +20,13 @@ The goal is to provide simple [Bootstrap servers](http://kafka.apache.org/docume
 - kafka-0.broker.kafka:9092
 - pzoo-0.pzoo.kafka:2181
 
+## Edit and Start PersistentVolume
+```
+- https://kubernetes.io/docs/concepts/storage/volumes/#local
+- kubectl apply -f ./PersistentVolume/PersistentVolume-broker.yml
+- kubectl apply -f ./PersistentVolume/PersistentVolume-broker.yml
+```
+
 ## Start Zookeeper
 
 The [Kafka book](https://www.confluent.io/resources/kafka-definitive-guide-preview-edition/) recommends that Kafka has its own Zookeeper cluster with at least 5 instances.
