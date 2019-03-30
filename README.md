@@ -21,6 +21,7 @@ The goal is to provide simple [Bootstrap servers](http://kafka.apache.org/docume
 - pzoo-0.pzoo.kafka:2181
 
 ## Edit and Start PersistentVolume
+```
 - https://kubernetes.io/docs/concepts/storage/volumes/#local
 - https://github.com/Yolean/kubernetes-kafka/tree/master/configure
 ```
