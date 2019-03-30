@@ -1,7 +1,7 @@
 
 # Small Kafka on Kubernetes
 
-Transparent Kafka setup that you can grow with.
+Transparent simple Kafka setup that you can grow with.
 Good for experiments and development.
 Use https://github.com/Yolean/kubernetes-kafka for Production
 
