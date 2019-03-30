@@ -1,5 +1,5 @@
 
-# Kafka on Kubernetes
+# Small Kafka on Kubernetes
 
 Transparent Kafka setup that you can grow with.
 Good for experiments and development.
