@@ -5,6 +5,6 @@
 ```
 ```
 - kubectl apply -f ./PersistentVolume/PersistentVolume-broker.yml
-- kubectl apply -f ./PersistentVolume/PersistentVolume-broker.yml
+- kubectl apply -f ./PersistentVolume/PersistentVolume-pzoo.yml
 
 ```
