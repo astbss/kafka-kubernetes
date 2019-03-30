@@ -21,11 +21,12 @@ The goal is to provide simple [Bootstrap servers](http://kafka.apache.org/docume
 - pzoo-0.pzoo.kafka:2181
 
 ## Edit and Start PersistentVolume
-```
 - https://kubernetes.io/docs/concepts/storage/volumes/#local
-- kubectl apply -f ./PersistentVolume/PersistentVolume-broker.yml
-- kubectl apply -f ./PersistentVolume/PersistentVolume-broker.yml
 - https://github.com/Yolean/kubernetes-kafka/tree/master/configure
+```
+```
+- kubectl apply -f ./PersistentVolume/PersistentVolume-broker.yml
+- kubectl apply -f ./PersistentVolume/PersistentVolume-pzoo.yml
 ```
 
 ## Start Zookeeper
