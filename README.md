@@ -34,7 +34,7 @@ kubectl apply -f ./zookeeper/
 kubectl apply -f ./
 ```
 
-To get consistent service DNS names kafka-N.broker.kafka (.svc.cluster.local), run everything in a namespace.
+To get consistent service DNS names kafka-N.broker.kafka (.svc.cluster.local), run everything in a namespace.<br>
 Use a headless service to create DNS records (20dns.yml)
 
 That's it. Just add business value :wink:.
