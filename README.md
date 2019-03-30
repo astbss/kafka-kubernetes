@@ -2,7 +2,8 @@
 # Kafka on Kubernetes
 
 Transparent Kafka setup that you can grow with.
-Good for both experiments and production.
+Good for experiments and development.
+Use https://github.com/Yolean/kubernetes-kafka for Production
 
 How to use:
  * Run a Kubernetes cluster, [minikube](https://github.com/kubernetes/minikube) or real.
