@@ -3,7 +3,7 @@
 
 Transparent simple Kafka setup that you can grow with.
 Good for experiments and development.
-Use https://github.com/Yolean/kubernetes-kafka for Production
+Use https://github.com/Yolean/kubernetes-kafka for Production Cluster.
 
 How to use:
  * Run a Kubernetes cluster, [minikube](https://github.com/kubernetes/minikube) or real.
