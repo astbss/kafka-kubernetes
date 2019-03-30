@@ -1,0 +1,15 @@
+# To get consistent service DNS names kafka-N.broker.kafka (.svc.cluster.local), run everything in a namespace
+# A headless service to create DNS records
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: broker
+  namespace: kafka
+spec:
+  ports:
+  - port: 9092
+  # [podname].broker.kafka.svc.cluster.local
+  clusterIP: None
+  selector:
+    app: kafka
