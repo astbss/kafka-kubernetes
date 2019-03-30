@@ -69,5 +69,6 @@ kubectl apply -f rbac-namespace-default/
 - https://github.com/Yolean/kubernetes-kafka
 - Special thanks to Yolean, Solsson and many others for their amusing work
 - https://hub.docker.com/r/solsson/kafka/
+- https://hub.docker.com/r/confluentinc/cp-kafka/
 - https://kubernetes.io/docs/concepts/storage/volumes/#local
 - http://wurstmeister.github.io/kafka-docker/
