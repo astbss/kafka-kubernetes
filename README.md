@@ -16,10 +16,9 @@ but we think the combination of the two is a great backbone for microservices.
 
 Keep an eye on `kubectl --namespace kafka get pods -w`.
 
-The goal is to provide [Bootstrap servers](http://kafka.apache.org/documentation/#producerconfigs): `kafka-0.broker.kafka.svc.cluster.local:9092,kafka-1.broker.kafka.svc.cluster.local:9092,kafka-2.broker.kafka.svc.cluster.local:9092`
-`
-
-Zookeeper at `zookeeper.kafka.svc.cluster.local:2181`.
+The goal is to provide simple [Bootstrap servers](http://kafka.apache.org/documentation/#producerconfigs): 
+- kafka-0.broker.kafka:9092
+- pzoo-0.pzoo.kafka:2181
 
 ## Start Zookeeper
 
