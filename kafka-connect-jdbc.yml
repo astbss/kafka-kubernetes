@@ -36,3 +36,5 @@ spec:
 # kubectl -n kafka exec -it kafkajdbc -- bash 
 # kubectl -n kafka exec -it kafkajdbc --container debian-network -- bash 
 # kubectl -n kafka exec -it kafkajdbc --container kafka-connect -- bash  
+
+# kubectl exec -it mysql-569c4cc845-5nrjj -- bash  
