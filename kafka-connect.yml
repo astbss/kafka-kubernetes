@@ -7,7 +7,7 @@ metadata:
   namespace: kafka
 spec:
   volumes:
-  - name: Connectors
+  - name: connectors
     hostPath:
       path: /var/kafka1/Connectors
 
@@ -19,7 +19,7 @@ spec:
     image: solsson/kafka
     imagePullPolicy: IfNotPresent
     volumeMounts:
-    - name: Connectors
+    - name: connectors
       mountPath: /opt/kafka/Connectors    
     name: kafka-connect
     resources: {}
