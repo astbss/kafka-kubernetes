@@ -32,6 +32,8 @@ spec:
     imagePullPolicy: IfNotPresent
     
 
+# kubectl -n kafka get pods
+# kubectl -n kafka delete pod kafkajdbc
 
 # kubectl -n kafka exec -it kafkajdbc -- bash 
 # kubectl -n kafka exec -it kafkajdbc --container debian-network -- bash 
