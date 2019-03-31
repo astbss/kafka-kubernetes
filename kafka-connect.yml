@@ -35,4 +35,4 @@ spec:
 
 # kubectl -n kafka exec -it kafkaconnect -- bash 
 # kubectl -n kafka exec -it kafkaconnect --container debian-network -- bash 
-    
+# kubectl -n kafka exec -it kafkaconnect --container kafka-connect -- bash  
