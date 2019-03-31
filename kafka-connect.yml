@@ -1,0 +1,27 @@
+# kubectl create -f ./kafka-connect.yml
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kafkaconnect
+  namespace: kafka
+spec:
+  volumes:
+  - name: Connectors
+    hostPath:
+      path: /var/kafka1/Connectors
+
+  containers:
+  - command:
+    - sh
+    - -c
+    - exec tail -f /dev/null
+    image: solsson/kafka
+    imagePullPolicy: IfNotPresent
+    volumeMounts:
+    - name: Connectors
+      mountPath: /opt/kafka/Connectors    
+    name: kafka-connect
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
