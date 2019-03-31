@@ -1,4 +1,4 @@
-# kubectl create -f ./kafka-connect.yml
+# kubectl apply -f ./kafka-connect.yml
 
 apiVersion: v1
 kind: Pod
