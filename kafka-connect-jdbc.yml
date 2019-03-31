@@ -1,0 +1,38 @@
+# kubectl apply -f ./kafka-connect-jdbc.yml
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kafkajdbc
+  namespace: kafka
+spec:
+  volumes:
+  - name: connectors
+    hostPath:
+      path: /var/kafka1/Connectors
+
+  containers:
+  - command:
+    - sh
+    - -c
+    - exec tail -f /dev/null
+    image: solsson/kafka-connect-jdbc:latest
+    imagePullPolicy: IfNotPresent
+    volumeMounts:
+    - name: connectors
+      mountPath: /opt/kafka/Connectors    
+    name: kafka-connect
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    
+  - name: debian-network
+    command: ["/bin/bash", "-c", "trap : TERM INT; sleep infinity & wait"]
+    image: astbss/debian-network
+    imagePullPolicy: IfNotPresent
+    
+
+
+# kubectl -n kafka exec -it kafkajdbc -- bash 
+# kubectl -n kafka exec -it kafkajdbc --container debian-network -- bash 
+# kubectl -n kafka exec -it kafkajdbc --container kafka-connect -- bash  
