@@ -16,7 +16,7 @@ spec:
     - sh
     - -c
     - exec tail -f /dev/null
-    image: solsson/kafka
+    image: solsson/kafka@sha256:2c822e821fa82d36e8b7fcc1eb9700b5412e629fb5f1a9fdec91e42eb6f674d2
     imagePullPolicy: IfNotPresent
     volumeMounts:
     - name: connectors
