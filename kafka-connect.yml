@@ -1,5 +1,8 @@
 # kubectl apply -f ./kafka-connect.yml
 
+# WARNING: This image do not work with Kafka Connect and MySQL / MariaDB
+# USE kafka-connect-jdbc.yml
+
 apiVersion: v1
 kind: Pod
 metadata:

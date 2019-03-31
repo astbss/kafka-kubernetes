@@ -15,8 +15,8 @@ spec:
   - command:
     - sh
     - -c
-    - exec tail -f /dev/null
-    image: solsson/kafka-connect-jdbc:latest
+    - exec /opt/kafka/bin/connect-standalone.sh /opt/kafka/Connectors/kconnect-jdbc.properties /opt/kafka/Connectors/source-mariadb.properties
+    image: solsson/kafka-connect-jdbc@sha256:b4796349b8078c483d77aa8e1963a5ecca69c049b70fd5e2e1d55a076a6e257c
     imagePullPolicy: IfNotPresent
     volumeMounts:
     - name: connectors
