@@ -35,7 +35,7 @@ spec:
           mountPath: /etc/kafka-configmap        
         - name: config
           mountPath: /etc/kafka
-        - name: data
+        - name: datapzoo
           mountPath: /var/lib/zookeeper
       containers:
       - name: zookeeper
