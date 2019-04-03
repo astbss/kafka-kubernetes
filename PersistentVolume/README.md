@@ -7,13 +7,14 @@
 
 
 ## Apply PersistentVolume Settings
-```
-- https://kubernetes.io/docs/concepts/storage/volumes/#local
-- https://github.com/Yolean/kubernetes-kafka/tree/master/configure
-```
 **You need to edit this files and add your node name to the end**
 ```
 - kubectl apply -f ./PersistentVolume/PersistentVolume-broker.yml
 - kubectl apply -f ./PersistentVolume/PersistentVolume-pzoo.yml
 
+```
+## Sources
+```
+- https://kubernetes.io/docs/concepts/storage/volumes/#local
+- https://github.com/Yolean/kubernetes-kafka/tree/master/configure
 ```
