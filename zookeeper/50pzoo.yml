@@ -72,7 +72,7 @@ spec:
         volumeMounts:
         - name: config
           mountPath: /etc/kafka
-        - name: data
+        - name: datapzoo
           mountPath: /var/lib/zookeeper
       volumes:
       - name: configmap
