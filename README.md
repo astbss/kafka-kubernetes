@@ -30,6 +30,13 @@ The goal is to provide simple [Bootstrap servers](http://kafka.apache.org/docume
 - kubectl apply -f ./PersistentVolume/PersistentVolume-pzoo.yml
 ```
 
+## RBAC
+
+Today must clusters enfoce [RBAC](https://kubernetes.io/docs/admin/authorization/rbac/) this is a minimal set of policies.
+```
+kubectl apply -f rbac-namespace-default/
+```
+
 ## Start Zookeeper
 
 The [Kafka book](https://www.confluent.io/resources/kafka-definitive-guide-preview-edition/) recommends that Kafka has its own Zookeeper cluster with at least 5 instances.
@@ -58,12 +65,6 @@ Use a headless service to create DNS records (20dns.yml)
 
 That's it. Just add business value :wink:.
 
-## RBAC
-
-For clusters that enfoce [RBAC](https://kubernetes.io/docs/admin/authorization/rbac/) there's a minimal set of policies in
-```
-kubectl apply -f rbac-namespace-default/
-```
 
 # Sources and inspiration
 - https://github.com/Yolean/kubernetes-kafka
