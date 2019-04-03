@@ -42,7 +42,7 @@ kubectl apply -f rbac-namespace-default/
 The [Kafka book](https://www.confluent.io/resources/kafka-definitive-guide-preview-edition/) recommends that Kafka has its own Zookeeper cluster with at least 5 instances.
 
 ```
-mkdir -p /var/kafka/broker ; mkdir -p /var/kafka/zookeeper ; chmod -R 777 /var/kafka
+mkdir -p /var/kafka/broker ; mkdir -p /var/kafka/zookeeper ; mkdir -p mkdir -p /var/kafka/pzoo ; chmod -R 777 /var/kafka
 kubectl apply -f ./zookeeper/
 ```
 
