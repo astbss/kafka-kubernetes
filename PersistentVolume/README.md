@@ -1,4 +1,4 @@
-## You need to first create the local folders used by PersistentVolume
+## First create the local folders used by PersistentVolume
 ```
 - mkdir -p /var/kafka/broker ; mkdir -p mkdir -p /var/kafka/pzoo ; chmod -R 777 /var/kafka
 
