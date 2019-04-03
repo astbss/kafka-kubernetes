@@ -1,4 +1,5 @@
 # kubectl apply -f PersistentVolume-broker.yml
+# kubectl get PersistentVolume
 
 apiVersion: v1
 kind: PersistentVolume
