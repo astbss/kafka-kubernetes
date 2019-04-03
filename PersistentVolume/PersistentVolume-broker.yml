@@ -1,3 +1,4 @@
+# mkdir -p /var/kafka/broker ; mkdir -p mkdir -p /var/kafka/pzoo ; chmod -R 777 /var/kafka
 # kubectl apply -f PersistentVolume-broker.yml
 # kubectl get PersistentVolume
 
