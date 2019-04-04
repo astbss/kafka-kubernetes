@@ -15,7 +15,7 @@ spec:
   - command:
     - sh
     - -c
-    - exec trap : TERM INT; sleep infinity & wait
+    - exec "trap : TERM INT; sleep infinity & wait"
     image: solsson/kafka-connect-jdbc@sha256:b4796349b8078c483d77aa8e1963a5ecca69c049b70fd5e2e1d55a076a6e257c
     imagePullPolicy: IfNotPresent
     volumeMounts:
