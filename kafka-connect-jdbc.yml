@@ -12,7 +12,7 @@ spec:
       path: /var/kafka1/Connectors
 
   containers:
-  - command: ["/bin/sh", "-c", "exec /opt/kafka/bin/connect-standalone.sh /opt/kafka/Connectors/kconnect-jdbc.properties /opt/kafka/Connectors/source-mariadb.properties-222"]
+  - command: ["sh", "-c", "exec /opt/kafka/bin/connect-standalone.sh /opt/kafka/Connectors/kconnect-jdbc.properties /opt/kafka/Connectors/source-mariadb.properties-222"]
     image: solsson/kafka-connect-jdbc@sha256:b4796349b8078c483d77aa8e1963a5ecca69c049b70fd5e2e1d55a076a6e257c
     imagePullPolicy: IfNotPresent
     volumeMounts:
