@@ -1,0 +1,26 @@
+# mkdir -p /var/kafka/broker ; mkdir -p mkdir -p /var/kafka/pzoo ; chmod -R 777 /var/kafka
+# kubectl apply -f PersistentVolume-broker.yml
+# kubectl get PersistentVolume
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: databroker
+spec:
+  capacity:
+    storage: 30Gi
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: local-storage
+  local:
+    path: /var/kafka/broker
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - kubans4
+          
