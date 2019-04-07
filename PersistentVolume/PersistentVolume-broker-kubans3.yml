@@ -5,7 +5,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: databroker
+  name: databroker3
 spec:
   capacity:
     storage: 30Gi
@@ -14,7 +14,7 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   storageClassName: local-storage
   local:
-    path: /var/kafka/broker
+    path: /mnt/kafka/broker3
   nodeAffinity:
     required:
       nodeSelectorTerms:
