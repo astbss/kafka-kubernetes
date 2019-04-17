@@ -20,6 +20,6 @@ spec:
     terminationMessagePath: /dev/termination-log
     terminationMessagePolicy: File
 
-# kubectl -n kafka exec -ti testclient -- bash
+# kubectl -n kafka exec -ti kafka-testclient -- bash
     
     
