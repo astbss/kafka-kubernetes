@@ -1,4 +1,5 @@
-# kubectl create -f ./kafka-testclient.yml
+# kubectl apply -f https://raw.githubusercontent.com/astbss/kafka-kubernetes/master/kafka-testclient.yml
+# kubectl apply -f ./kafka-testclient.yml
 
 apiVersion: v1
 kind: Pod
