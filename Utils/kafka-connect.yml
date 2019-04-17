@@ -1,3 +1,4 @@
+# kubectl apply -f https://raw.githubusercontent.com/astbss/kafka-kubernetes/master/Utils/kafka-connect.yml
 # kubectl apply -f ./kafka-connect.yml
 
 # WARNING: This image do not work with Kafka Connect and MySQL / MariaDB
