@@ -24,8 +24,12 @@ spec:
           values:
           - ansikub
           
+# kubectl get events          
 # kubectl get PersistentVolume
 # kubectl get PersistentVolumeClaims
 # kubectl delete PersistentVolumeClaims data-kafka-0
 # kubectl delete PersistentVolumeClaims data-pzoo-0
 # kubectl delete PersistentVolumeClaim databroker-kafka-0
+
+# kubectl delete PersistentVolume datapzoo
+# kubectl delete PersistentVolume databroker
